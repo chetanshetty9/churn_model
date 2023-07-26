@@ -1,0 +1,8 @@
+steps:
+  # Install dependencies (optional if your notebook doesn't require additional packages)
+  - name: "gcr.io/cloud-builders/pip"
+    args: ["install", "pandas", "numpy", "scikit-learn"]
+
+  # Convert the Jupyter Notebook to a Python script
+  - name: "gcr.io/cloud-builders/jupyter"
+    args: ["nbconvert", "--to", "script", "churn_project.ipynb"]
