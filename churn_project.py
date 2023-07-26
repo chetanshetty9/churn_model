@@ -25,7 +25,7 @@ data = pd.DataFrame({
 })
 
 
-# In[2]:
+# In[3]:
 
 
 from sklearn.model_selection import train_test_split
@@ -51,6 +51,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print("Model Accuracy:", accuracy)
 print("Classification Report:")
 print(classification_report(y_test, y_pred))
+print('Hello world')
 
 
 # In[ ]:
